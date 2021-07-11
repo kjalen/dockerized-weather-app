@@ -17,12 +17,11 @@ class WeatherAPI {
             if (r.ok) {
                 return r.json()
             }
-            throw new Error(console.log(r.statusText))
-        })
+        }).catch(error => {console.log(error);})
 
     }
     getWeatherByCity(options) {
-        console.log('options: ' + options);
+        console.log('options: ' + JSON.stringify(options));
         let qs = options ? "?" + querystring.stringify(options) : ""
         let url = "/find" + qs
         let config = {
