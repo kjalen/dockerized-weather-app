@@ -21,7 +21,7 @@ class WeatherAPI {
         })
 
     }
-    getWeather(options) {
+    getWeatherByCity(options) {
         console.log('options: ' + options);
         let qs = options ? "?" + querystring.stringify(options) : ""
         let url = "/find" + qs

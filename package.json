@@ -7,6 +7,7 @@
   "scripts": {
     "start": "nodemon server.js"
   },
+  "repository": "github:kjalen/dockerized-weather-app",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.16.1",
