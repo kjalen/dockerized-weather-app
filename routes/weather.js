@@ -3,6 +3,6 @@ var router = express.Router();
 let weather_controller = require('../controllers/weatherController')
 
 
-router.get('/', weather_controller.index);
+router.get('/:city', weather_controller.index);
 
 module.exports = router;
