@@ -33,10 +33,4 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-
-
-
-
-// see if its working
-
 module.exports = app;
