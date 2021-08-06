@@ -10,7 +10,7 @@ class WeatherAPI {
     request(endpoint = "", options = {}) {
         let url = this.basePath + endpoint
         let headers = {
-            'x-api-key': this.api_key
+            'x-api-key': this.api_key,
         };
         let method = options.method
 
